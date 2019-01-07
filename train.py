@@ -48,7 +48,7 @@ def build_cnn_model(architecture, n_hidden_layers):
     # input_size = model.fc.in_features # Resner, Inception
     # input_size = model.classifier.in_features # Densenet
     # input_size = model.classifier[1].in_channels #SqueezeNet
-    input_size = model.classifier[0].in_features
+    input_size = model.classifier[0].in_features #vgg
     classif = classifier.Classifier(input_size, 102, n_hidden_layers)
     model.classifier = classif
     return model, input_size
