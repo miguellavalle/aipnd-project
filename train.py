@@ -44,7 +44,7 @@ def build_cnn_model(architecture, n_hidden_layers):
         param.requires_grad = False
     
     # Create the classifier and add it to the model
-    # For vgg architecures, the following line would be:
+    # For non vgg architecures, the following line would be:
     # input_size = model.fc.in_features # Resner, Inception
     # input_size = model.classifier.in_features # Densenet
     # input_size = model.classifier[1].in_channels #SqueezeNet
